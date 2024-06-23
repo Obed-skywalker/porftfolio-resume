@@ -609,10 +609,14 @@ box-shadow: var(--box-shadow);
   box-shadow: var(--box-shadow);
 }
 .contact  .call img{
-  border: 1px solid var(--red-opaco);
-  max-width:160px;
+  border: 4px solid var(--red);
+  padding: 8px;
+  max-width:180px;
   border-radius: 50%;
-  padding: 5px;
+}
+.contact  .call img:hover{
+  padding: 1px;
+ 
 }
 .contact .call a{   /* href to snap looks like a btn */
   width: 150px;
