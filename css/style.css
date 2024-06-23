@@ -689,8 +689,9 @@ box-shadow: var(--box-shadow);
 }
   #logo-footer{
     position: relative;
-    margin-top: 2rem;
+    margin-top: 0rem;
     margin-bottom: 1.5rem;
+    width: 350px;
   }
 .footer-main h3{
   font-size: var(--normal-font-size);
