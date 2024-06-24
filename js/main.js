@@ -1,7 +1,37 @@
+
+/*=============== email Js ===============*/
+// send email from Form
+const btn = document.getElementById('btn-email');
+
+document.getElementById('form')
+.addEventListener('submit', function(event) {
+    event.preventDefault();
+ 
+    btn.value = 'Sending...';
+ 
+    const serviceID = 'default_service';
+    const templateID = 'template_iz8zmzq';
+ 
+    emailjs.sendForm(serviceID, templateID, this)
+     .then(() => {
+       btn.value = 'Send Email';
+       alert('Sent!');
+     }, (err) => {
+       btn.value = 'Send Email';
+       alert(JSON.stringify(err));
+     });
+ });
+
 /*=============== SHOW MENU ===============*/
+let menu= document.querySelector('#bars-icon');
+let navbar= document.querySelector('.navbar');
 
-
-/*=============== CHANGE BACKGROUND HEADER ===============*/
-
-
+menu.onclick= () =>{
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+}
+window.onscroll = ()=>{
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+  }
 /*=============== DARK LIGHT THEME ===============*/ 
