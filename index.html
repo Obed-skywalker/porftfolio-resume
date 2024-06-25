@@ -3,7 +3,9 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      
       <!--=============== FAVICON ===============-->
       <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
       <!--=============== BOXICONS ===============-->
@@ -27,21 +29,21 @@
          <a href="#home" class="logo">CRISS
             <span>OBD</span> NEVAREZ
          </a>
-         <i class="fa-solid fa-bars" id="menu-icon"></i>
+         <i class="fa-solid fa-bars" id="bars-icon"></i>
          <nav class="navbar">  
             <ul>
             <li class="active">
                 <a href="#">HOME</a>
             </li>
             <li>
-               <a href="#education">EDUCATION</a>
-           </li>
-            <li>
                 <a href="#services">SERVICES</a>
             </li>
             <li>
                 <a href="#work">WORK</a>
             </li>
+            <li>
+               <a href="#education">EDUCATION</a>
+           </li>
             <li>
                <a  href="#contact" id="contact-btn">CONTACT</a>
             </li>
@@ -74,38 +76,6 @@
                <img src="images/guelp_eng_prog.png" alt="Profie foto">
             </div>
          </section>
-         <!--==================== EDUCATION ====================-->
-         <section class="education section" id="education">
-            <h2 class="headings">EDUCATION <i class='bx bxs-graduation'></i></h2>
-            <div class="timeline-items">
-               <div class="timeline-item" >
-                  <div class="timeline-dot"></div>
-                     <div class="timeline-date">Master Degree
-                     </div>
-                     <div class="timeline-content">
-                        <h3>MSc Information Technology</h3>
-                        <h4>University of Aberdeen</h4>
-                        <p>•Developing Web-applications for local and small business. 
-                           •Data analys and creating reports, Dashboards, charts, graphics for businnes decisions.
-                           <br>•Consulting and advising local businesses on their technological 
-                           needs.</p>
-                     </div>
-               </div>
-               <div class="timeline-item" >
-                  <div class="timeline-dot"></div>
-                     <div class="timeline-date">Bachelor Degree
-                     </div>
-                     <div class="timeline-content">
-                        <h3>Freelancer</h3>
-                        <h4>Developer</h4>
-                        <p>•Developing Web-applications for local and small business. 
-                           •Data analys and creating reports, Dashboards, charts, graphics for businnes decisions.
-                           <br>•Consulting and advising local businesses on their technological 
-                           needs.</p>
-                     </div>
-               </div>
-            </div>
-         </section>  
          <!--==================== Services ====================-->
          <section class="services section" id="services">
             <h2 class="headings">SERVICES</h2>
@@ -246,6 +216,43 @@
 
            </div>
          </section>
+         <!--==================== EDUCATION ====================-->
+         <section class="education section" id="education">
+            <h2 class="headings">EDUCATION <i class='bx bxs-graduation'></i></h2>
+            <div class="timeline-items">
+               <div class="timeline-item" >
+                  <div class="timeline-dot"></div>
+                     <div class="timeline-date">2019
+                     </div>
+                     <div class="timeline-content" id="card">
+                        <div class="imagebox">
+                           <img src="/images/jedi-lema.jpg" id="jedi">
+                        </div>      
+                        <div class="content" >
+                           <h4>Master degree</h4><br>
+                           <h3>MSc Science Information Technology</h3>
+                           <p>University of Aberdeen, Scotland UK.</p>
+                        </div>
+                     </div>
+               </div>
+                  <div class="timeline-item" >
+                     <div class="timeline-dot"></div>
+                        <div class="timeline-date">2011
+                        </div>
+                        <div class="timeline-content" id="card">
+                           <div class="imagebox">
+                              <img src="/images/jedi-lema.jpg" id="jedi">
+                           </div>      
+                           <div class="content" >
+                              <h4>Bachelor degree</h4><br>
+                              <h3>Software Engineer</h3>
+                              <p>Durango Technical Institute, Durango Mexico.</p>
+                           </div>
+                        </div>
+                  </div>
+            </div>
+         </section>  
+         
          <!--==================== CONTACT ====================-->
          <section class="contact section" id="contact">
             <h2 class="headings">CONTACT<span> ME</span></h2>

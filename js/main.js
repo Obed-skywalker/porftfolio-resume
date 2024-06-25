@@ -25,6 +25,8 @@ document.getElementById('form')
 /*=============== SHOW MENU ===============*/
 let menu= document.querySelector('#bars-icon');
 let navbar= document.querySelector('.navbar');
+let sections = document.querySelectorAll('section');
+let navLinks = document.querySelectorAll('header nav a')
 
 menu.onclick= () =>{
     menu.classList.toggle('fa-times');
